@@ -1,0 +1,20 @@
+[
+  {
+    "id": "changing-your-password",
+    "active": true,
+    "sort": 10,
+    "pathId": 2071120277
+  },
+  {
+    "id": "creating-your-account",
+    "active": true,
+    "sort": 5,
+    "pathId": 89955033
+  },
+  {
+    "id": "using-a-guest-account-on-the-vr-app",
+    "active": true,
+    "sort": 15,
+    "pathId": 501440432
+  }
+]

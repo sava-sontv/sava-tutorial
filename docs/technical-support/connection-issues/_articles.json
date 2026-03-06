@@ -1,0 +1,32 @@
+[
+  {
+    "id": "vr-app-cannot-connect-to-server",
+    "active": true,
+    "sort": 5,
+    "pathId": 871796173
+  },
+  {
+    "id": "worlds-not-loading-infinite-loading-screen",
+    "active": true,
+    "sort": 10,
+    "pathId": 252887248
+  },
+  {
+    "id": "high-ping-or-lag-inside-worlds",
+    "active": true,
+    "sort": 15,
+    "pathId": 677776269
+  },
+  {
+    "id": "voice-chat-not-working-due-to-network-restrictions",
+    "active": true,
+    "sort": 20,
+    "pathId": 2097831810
+  },
+  {
+    "id": "community-fail-to-load-data",
+    "active": true,
+    "sort": 25,
+    "pathId": 286292873
+  }
+]

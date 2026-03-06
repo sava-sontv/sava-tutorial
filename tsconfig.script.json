@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "moduleResolution": "node",
+    "jsx": "react",
+    "types": ["node", "react"]
+  },
+  "include": ["./scripts/**/*.ts"]
+}

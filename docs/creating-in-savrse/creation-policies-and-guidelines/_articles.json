@@ -1,0 +1,20 @@
+[
+  {
+    "id": "publishing-standards-and-quality-requirements",
+    "active": true,
+    "sort": 15,
+    "pathId": 567779505
+  },
+  {
+    "id": "safety-and-moderation-requirements",
+    "active": true,
+    "sort": 10,
+    "pathId": 255877084
+  },
+  {
+    "id": "world-content-guidelines",
+    "active": true,
+    "sort": 5,
+    "pathId": 314567026
+  }
+]

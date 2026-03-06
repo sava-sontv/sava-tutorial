@@ -1,0 +1,19 @@
+{
+  "extends": "@docusaurus/tsconfig",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@site/*": ["./*"]
+    },
+    "outDir": "./dist/scripts",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "moduleResolution": "bundler",
+    "skipLibCheck": true,
+    "noEmit": true,
+    "rootDir": ".",
+    "jsx": "react"
+  },
+  "include": ["./scripts/**/*.ts", "./src/**/*.ts", "./src/**/*.tsx", "./src/global.d.ts"],
+  "exclude": [".docusaurus", "build"]
+}

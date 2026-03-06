@@ -1,0 +1,59 @@
+{
+  "name": "sava-tutorial",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "docusaurus": "docusaurus",
+    "sync-docs-i18n": "node scripts/sync-docs-i18n.js",
+    "normalize-docs-mdx": "node scripts/normalize-docs-mdx.js",
+    "ensure-category-json": "node scripts/ensure-category-json.js",
+    "apply-articles-json": "node scripts/apply-articles-json.js",
+    "generate-sidebar": "node scripts/generate-sidebar.js",
+    "dev": "yarn ensure-category-json && node scripts/start-with-watch.js",
+    "dev:fresh": "yarn clear && yarn ensure-category-json && yarn apply-articles-json && yarn generate-sidebar && yarn sync-docs-i18n && yarn normalize-docs-mdx && node scripts/start-with-watch.js",
+    "dev:vi": "node scripts/start-with-watch.js --locale vi",
+    "start": "node scripts/start-with-watch.js",
+    "start:vi": "node scripts/start-with-watch.js --locale vi",
+    "build": "yarn ensure-category-json && yarn apply-articles-json && yarn generate-sidebar && yarn sync-docs-i18n && yarn normalize-docs-mdx && docusaurus build",
+    "swizzle": "docusaurus swizzle",
+    "deploy": "docusaurus deploy",
+    "clear": "docusaurus clear",
+    "serve": "docusaurus serve --host savrse.savameta.local --port 3000",
+    "write-translations": "docusaurus write-translations",
+    "write-heading-ids": "docusaurus write-heading-ids",
+    "typecheck": "npx tsc --noEmit"
+  },
+  "dependencies": {
+    "@docusaurus/core": "3.9.2",
+    "@docusaurus/preset-classic": "3.9.2",
+    "fs-extra": "^11.1.1",
+    "@mdx-js/react": "^3.0.0",
+    "clsx": "^2.0.0",
+    "prism-react-renderer": "^2.3.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "chokidar": "^4.0.1",
+    "@docusaurus/module-type-aliases": "3.9.2",
+    "@docusaurus/tsconfig": "3.9.2",
+    "@docusaurus/types": "3.9.2",
+    "cross-env": "^7.0.3",
+    "typescript": "~5.6.2"
+  },
+  "browserslist": {
+    "production": [
+      ">0.5%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 3 chrome version",
+      "last 3 firefox version",
+      "last 5 safari version"
+    ]
+  },
+  "engines": {
+    "node": ">=20.0"
+  }
+}

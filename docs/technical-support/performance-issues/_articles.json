@@ -1,0 +1,26 @@
+[
+  {
+    "id": "low-fps-or-graphics-lag",
+    "active": true,
+    "sort": 5,
+    "pathId": 789766963
+  },
+  {
+    "id": "app-crashes-or-not-responding",
+    "active": true,
+    "sort": 10,
+    "pathId": 251271763
+  },
+  {
+    "id": "overheating-or-battery-drain",
+    "active": true,
+    "sort": 15,
+    "pathId": 1669142813
+  },
+  {
+    "id": "world-takes-too-long-to-load",
+    "active": true,
+    "sort": 20,
+    "pathId": 2033881596
+  }
+]

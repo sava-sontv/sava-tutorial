@@ -1,0 +1,10 @@
+.breadcrumbsContainer {
+  --ifm-breadcrumb-size-multiplier: 0.8;
+  margin-bottom: 0.8rem;
+}
+
+.breadcrumbsContainer :global(.breadcrumbs__link) {
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+}

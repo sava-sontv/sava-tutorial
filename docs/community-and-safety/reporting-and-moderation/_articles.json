@@ -1,0 +1,20 @@
+[
+  {
+    "id": "appealing-an-account-ban",
+    "active": true,
+    "sort": 15,
+    "pathId": 1031005207
+  },
+  {
+    "id": "reporting-players-or-content",
+    "active": true,
+    "sort": 5,
+    "pathId": 450086793
+  },
+  {
+    "id": "understanding-bans-and-suspension",
+    "active": true,
+    "sort": 10,
+    "pathId": 224458048
+  }
+]

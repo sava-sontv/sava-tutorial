@@ -1,0 +1,38 @@
+{
+  "link.title.Community": {
+    "message": "Community",
+    "description": "The title of the footer links column with title=Community in the footer"
+  },
+  "link.title.Follow Us on": {
+    "message": "Follow Us on",
+    "description": "The title of the footer links column with title=Follow Us on in the footer"
+  },
+  "link.item.label.About Us": {
+    "message": "About Us",
+    "description": "The label of footer link with label=About Us linking to https://savrse.savameta.com/about-us"
+  },
+  "link.item.label.Creator Hub": {
+    "message": "Creator Hub",
+    "description": "The label of footer link with label=Creator Hub linking to https://savrse.savameta.com/creator"
+  },
+  "link.item.label.World": {
+    "message": "World",
+    "description": "The label of footer link with label=World linking to https://savrse.savameta.com/world"
+  },
+  "link.item.label.Avatar": {
+    "message": "Avatar",
+    "description": "The label of footer link with label=Avatar linking to https://savrse.savameta.com/avatar"
+  },
+  "link.item.label.Facebook": {
+    "message": "Facebook",
+    "description": "The label of footer link with label=Facebook linking to https://www.facebook.com/savameta.tech"
+  },
+  "link.item.label.Tiktok": {
+    "message": "Tiktok",
+    "description": "The label of footer link with label=Tiktok linking to https://www.tiktok.com/@savameta.ontrend"
+  },
+  "copyright": {
+    "message": "Copyright © SAVRSE 2026. All rights reserved.",
+    "description": "The footer copyright"
+  }
+}

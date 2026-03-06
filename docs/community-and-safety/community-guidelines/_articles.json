@@ -1,0 +1,20 @@
+[
+  {
+    "id": "chat-etiquette-and-harassment-policy",
+    "active": true,
+    "sort": 10,
+    "pathId": 958646571
+  },
+  {
+    "id": "savrse-code-of-conduct",
+    "active": true,
+    "sort": 5,
+    "pathId": 544249667
+  },
+  {
+    "id": "savrse-community-standards",
+    "active": true,
+    "sort": 15,
+    "pathId": 1670989183
+  }
+]

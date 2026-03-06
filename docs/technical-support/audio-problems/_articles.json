@@ -1,0 +1,20 @@
+[
+  {
+    "id": "no-in-game-sound",
+    "active": true,
+    "sort": 5,
+    "pathId": 9135359
+  },
+  {
+    "id": "microphone-not-working",
+    "active": true,
+    "sort": 10,
+    "pathId": 691504860
+  },
+  {
+    "id": "audio-cutting-out-or-distorted",
+    "active": true,
+    "sort": 15,
+    "pathId": 1457048354
+  }
+]

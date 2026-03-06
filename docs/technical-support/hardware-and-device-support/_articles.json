@@ -1,0 +1,20 @@
+[
+  {
+    "id": "controller-or-tracking-issues",
+    "active": true,
+    "sort": 5,
+    "pathId": 1196193673
+  },
+  {
+    "id": "device-compatibility-and-setup",
+    "active": true,
+    "sort": 10,
+    "pathId": 2050196969
+  },
+  {
+    "id": "vr-headset-troubleshooting",
+    "active": true,
+    "sort": 15,
+    "pathId": 1424165118
+  }
+]

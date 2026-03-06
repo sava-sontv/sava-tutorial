@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Savrse Tutorial Manager</title>
+    <script>
+      // Disable auto-initialization
+      window.CMS_MANUAL_INIT = true;
+    </script>
+    <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+  </head>
+
+  <body>
+    <script>
+      const settingsConfig = {
+        backend: {
+          name: 'github',
+          repo: 'sava-sontv/sava-tutorial', // vd: sontran/my-website
+          branch: 'develop',
+        },
+        media_folder: 'static/img/uploads',
+        public_folder: '/img/uploads',
+      };
+
+
+      const avatarCollection = {
+        name: 'avatar',
+        label: 'Avatar',
+        folder: 'avatar',
+        create: true,
+        slug: '{{slug}}',
+        extension: 'md',
+        format: 'frontmatter',
+        fields: [
+          { label: 'Title', name: 'title', widget: 'string' },
+          { label: 'Slug', name: 'slug', widget: 'string', required: false },
+          // { label: 'Tags', name: 'tags', widget: 'list', required: false },
+          { label: 'Body', name: 'body', widget: 'markdown' },
+          {
+            label: 'Sort Index',
+            name: 'sidebar_position',
+            widget: 'number',
+            required: false,
+            value_type: 'int',
+            default: 1,
+          },
+        ],
+      };
+
+      const creatorCollection = {
+        name: 'creator',
+        label: 'Creator',
+        folder: 'creator',
+        create: true,
+        slug: '{{slug}}',
+        extension: 'md',
+        format: 'frontmatter',
+        fields: [
+          { label: 'Title', name: 'title', widget: 'string' },
+          { label: 'Slug', name: 'slug', widget: 'string', required: false },
+          // { label: 'Tags', name: 'tags', widget: 'list', required: false },
+          { label: 'Body', name: 'body', widget: 'markdown' },
+          {
+            label: 'Sort Index',
+            name: 'sidebar_position',
+            widget: 'number',
+            required: false,
+            value_type: 'int',
+            default: 1,
+          },
+        ],
+      };
+
+      const config = {
+        create: true,
+        slug: '{{slug}}',
+        extension: 'md',
+        format: 'frontmatter',
+        fields: [
+          { label: 'Title', name: 'title', widget: 'string' },
+          { label: 'Slug', name: 'slug', widget: 'string', required: false },
+          // { label: 'Tags', name: 'tags', widget: 'list', required: false },
+          { label: 'Body', name: 'body', widget: 'markdown' },
+          {
+            label: 'Sort Index',
+            name: 'sidebar_position',
+            widget: 'number',
+            required: false,
+            value_type: 'int',
+            default: 1,
+          },
+        ],
+      };
+
+      const topic11 = {
+        name: 'introduction-to-savrse',
+        label: 'Introduction to Savrse',
+        folder: 'introduction-to-savrse',
+        ...config,
+      };
+
+      const topic12 = {
+        name: 'onboarding-and-vr-basic',
+        label: 'Onboarding & VR Basics',
+        folder: 'onboarding-and-vr-basic',
+        ...config,
+      };
+
+      const topic21 = {
+        name: 'account-creation-and-management',
+        label: 'Account Creation & Management',
+        folder: 'account-creation-and-management',
+        ...config,
+      };
+
+      const topic22 = {
+        name: 'login-and-password-troubleshooting',
+        label: 'Login & Password Troubleshooting',
+        folder: 'clogin-and-password-troubleshooting',
+        ...config,
+      };
+
+      const topic31 = {
+        name: 'connection-issues',
+        label: 'Connection Issues',
+        folder: 'connection-issues',
+        ...config,
+      };
+
+      const topic32 = {
+        name: 'audio-problems',
+        label: 'Audio Problems',
+        folder: 'audio-problems',
+        ...config,
+      };
+
+      const topic33 = {
+        name: 'performance-issues',
+        label: 'Performance Issues',
+        folder: 'performance-issues',
+        ...config,
+      };
+
+      const topic34 = {
+        name: 'hardware-and-device-support',
+        label: 'Hardware & Device Support',
+        folder: 'hardware-and-device-support',
+        ...config,
+      };
+
+      let name = 'finding-and-joining-worlds';
+      const topic41 = {
+        name,
+        label: 'Finding & Joining Worlds',
+        folder: name,
+        ...config,
+      };
+
+      name = 'social-features';
+      const topic42 = {
+        name,
+        label: 'Social Features',
+        folder: name,
+        ...config,
+      };
+
+      name = 'community-guidelines';
+      const topic51 = {
+        name,
+        label: 'Community Guidelines',
+        folder: name,
+        ...config,
+      };
+
+      name = 'reporting-and-moderation';
+      const topic52 = {
+        name,
+        label: 'Reporting & Moderation',
+        folder: name,
+        ...config,
+      };
+
+      name = 'world-creation-basics';
+      const topic61 = {
+        name,
+        label: 'World Creation Basics',
+        folder: name,
+        ...config,
+      };
+
+      name = 'creation-policies-and-guidelines';
+      const topic62 = {
+        name,
+        label: 'Creation Policies & Guidelines',
+        folder: name,
+        ...config,
+      };
+
+      CMS.init({
+        config: {
+          ...settingsConfig,
+          collections: [
+            avatarCollection,
+            creatorCollection,
+            topic11,
+            topic12,
+            topic21,
+            topic22,
+            topic31,
+            topic32,
+            topic33,
+            topic34,
+            topic41,
+            topic42,
+            topic51,
+            topic52,
+            topic61,
+            topic62,
+          ],
+        },
+      });
+    </script>
+  </body>
+</html>

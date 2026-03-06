@@ -1,0 +1,14 @@
+[
+  {
+    "id": "browsing-and-joining-worlds",
+    "active": true,
+    "sort": 5,
+    "pathId": 1844956562
+  },
+  {
+    "id": "switching-between-worlds",
+    "active": true,
+    "sort": 10,
+    "pathId": 1858675717
+  }
+]

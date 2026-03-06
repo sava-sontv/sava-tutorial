@@ -1,0 +1,2 @@
+@Library('sava') _
+sava_pipeline(domain:"savrse.savameta.com",is_subdomain:"true",container_port:"80",service_path:"/help",service_ver:"",namespace:"savrse",service_name:"savrse-help")

@@ -1,0 +1,65 @@
+/**
+ * Trang chủ Sava Help: header gọn, section Categories nền tối.
+ */
+
+ .heroBanner {
+  padding: 5rem 0;
+  text-align: center;
+  background: var(--ifm-background-color);
+  background-image: url('/img/banner.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.heroTitle {
+  font-size:3rem;
+  margin-bottom: 0.5rem;
+}
+
+.heroSubtitle {
+  font-size: 1.3rem;
+  opacity: 0.9;
+  margin-bottom: 1.5rem;
+}
+
+.localeSwitcher {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.localeLink {
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+.localeLink:hover {
+  opacity: 1;
+}
+
+.localeLinkActive {
+  font-weight: 600;
+  opacity: 1;
+}
+
+/*.searchPlaceholder {*/
+/*  max-width: 400px;*/
+/*  margin: 0 auto;*/
+/*  padding: 0.75rem 1rem;*/
+/*  background: var(--ifm-color-emphasis-200);*/
+/*  border-radius: 6px;*/
+/*  font-size: 0.95rem;*/
+/*  color: var(--ifm-color-emphasis-600);*/
+/*}*/
+
+@media (max-width: 996px) {
+  .heroBanner {
+    padding: 1.5rem 1rem;
+  }
+
+  .heroTitle {
+    font-size: 1.5rem;
+  }
+}

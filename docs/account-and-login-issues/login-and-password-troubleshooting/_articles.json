@@ -1,0 +1,26 @@
+[
+  {
+    "id": "i-didnt-receive-the-password-reset-email",
+    "active": true,
+    "sort": 10,
+    "pathId": 348068126
+  },
+  {
+    "id": "i-forgot-my-password",
+    "active": true,
+    "sort": 5,
+    "pathId": 1614592554
+  },
+  {
+    "id": "i-forgot-which-email-i-used",
+    "active": true,
+    "sort": 15,
+    "pathId": 1043441192
+  },
+  {
+    "id": "logging-in-by-code-failed",
+    "active": true,
+    "sort": 20,
+    "pathId": 1003638175
+  }
+]

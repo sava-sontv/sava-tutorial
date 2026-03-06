@@ -1,0 +1,10 @@
+{
+  "label": "Tutorials",
+  "position": 25,
+  "link": {
+    "type": "generated-index",
+    "title": "Tutorials",
+    "slug": "tutorials",
+    "description": "Articles in Tutorials"
+  }
+}

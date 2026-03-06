@@ -1,0 +1,10 @@
+{
+  "label": "Favorite Avatars",
+  "position": 5,
+  "link": {
+    "type": "generated-index",
+    "title": "Favorite Avatars",
+    "slug": "favorite-avatars",
+    "description": "Articles in Favorite Avatars"
+  }
+}

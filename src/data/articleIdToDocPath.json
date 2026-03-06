@@ -1,0 +1,166 @@
+{
+  "9135359": {
+    "docPath": "/docs/technical-support/audio-problems/no-in-game-sound",
+    "path": "/articles/9135359-no-in-game-sound"
+  },
+  "89955033": {
+    "docPath": "/docs/account-and-login-issues/account-creation-and-management/creating-your-account",
+    "path": "/articles/89955033-creating-your-account"
+  },
+  "224458048": {
+    "docPath": "/docs/community-and-safety/reporting-and-moderation/understanding-bans-and-suspension",
+    "path": "/articles/224458048-understanding-bans-and-suspension"
+  },
+  "251271763": {
+    "docPath": "/docs/technical-support/performance-issues/app-crashes-or-not-responding",
+    "path": "/articles/251271763-app-crashes-or-not-responding"
+  },
+  "252887248": {
+    "docPath": "/docs/technical-support/connection-issues/worlds-not-loading-infinite-loading-screen",
+    "path": "/articles/252887248-worlds-not-loading-infinite-loading-screen"
+  },
+  "255877084": {
+    "docPath": "/docs/creating-in-savrse/creation-policies-and-guidelines/safety-and-moderation-requirements",
+    "path": "/articles/255877084-safety-and-moderation-requirements"
+  },
+  "286292873": {
+    "docPath": "/docs/technical-support/connection-issues/community-fail-to-load-data",
+    "path": "/articles/286292873-community-fail-to-load-data"
+  },
+  "314567026": {
+    "docPath": "/docs/creating-in-savrse/creation-policies-and-guidelines/world-content-guidelines",
+    "path": "/articles/314567026-world-content-guidelines"
+  },
+  "348068126": {
+    "docPath": "/docs/account-and-login-issues/login-and-password-troubleshooting/i-didnt-receive-the-password-reset-email",
+    "path": "/articles/348068126-i-didnt-receive-the-password-reset-email"
+  },
+  "434138007": {
+    "docPath": "/docs/getting-started/introduction-to-savrse/supported-devices-and-system-requirements",
+    "path": "/articles/434138007-supported-devices-and-system-requirements"
+  },
+  "450086793": {
+    "docPath": "/docs/community-and-safety/reporting-and-moderation/reporting-players-or-content",
+    "path": "/articles/450086793-reporting-players-or-content"
+  },
+  "501440432": {
+    "docPath": "/docs/account-and-login-issues/account-creation-and-management/using-a-guest-account-on-the-vr-app",
+    "path": "/articles/501440432-using-a-guest-account-on-the-vr-app"
+  },
+  "544249667": {
+    "docPath": "/docs/community-and-safety/community-guidelines/savrse-code-of-conduct",
+    "path": "/articles/544249667-savrse-code-of-conduct"
+  },
+  "567779505": {
+    "docPath": "/docs/creating-in-savrse/creation-policies-and-guidelines/publishing-standards-and-quality-requirements",
+    "path": "/articles/567779505-publishing-standards-and-quality-requirements"
+  },
+  "606078847": {
+    "docPath": "/docs/creating-in-savrse/world-creation-basics/installing-savrse-studio",
+    "path": "/articles/606078847-installing-savrse-studio"
+  },
+  "677776269": {
+    "docPath": "/docs/technical-support/connection-issues/high-ping-or-lag-inside-worlds",
+    "path": "/articles/677776269-high-ping-or-lag-inside-worlds"
+  },
+  "691504860": {
+    "docPath": "/docs/technical-support/audio-problems/microphone-not-working",
+    "path": "/articles/691504860-microphone-not-working"
+  },
+  "789766963": {
+    "docPath": "/docs/technical-support/performance-issues/low-fps-or-graphics-lag",
+    "path": "/articles/789766963-low-fps-or-graphics-lag"
+  },
+  "791475153": {
+    "docPath": "/docs/creating-in-savrse/world-creation-basics/creating-your-first-world",
+    "path": "/articles/791475153-creating-your-first-world"
+  },
+  "871796173": {
+    "docPath": "/docs/technical-support/connection-issues/vr-app-cannot-connect-to-server",
+    "path": "/articles/871796173-vr-app-cannot-connect-to-server"
+  },
+  "958646571": {
+    "docPath": "/docs/community-and-safety/community-guidelines/chat-etiquette-and-harassment-policy",
+    "path": "/articles/958646571-chat-etiquette-and-harassment-policy"
+  },
+  "961964138": {
+    "docPath": "/docs/getting-started/introduction-to-savrse/what-is-savrse",
+    "path": "/articles/961964138-what-is-savrse"
+  },
+  "1003638175": {
+    "docPath": "/docs/account-and-login-issues/login-and-password-troubleshooting/logging-in-by-code-failed",
+    "path": "/articles/1003638175-logging-in-by-code-failed"
+  },
+  "1031005207": {
+    "docPath": "/docs/community-and-safety/reporting-and-moderation/appealing-an-account-ban",
+    "path": "/articles/1031005207-appealing-an-account-ban"
+  },
+  "1043441192": {
+    "docPath": "/docs/account-and-login-issues/login-and-password-troubleshooting/i-forgot-which-email-i-used",
+    "path": "/articles/1043441192-i-forgot-which-email-i-used"
+  },
+  "1196193673": {
+    "docPath": "/docs/technical-support/hardware-and-device-support/controller-or-tracking-issues",
+    "path": "/articles/1196193673-controller-or-tracking-issues"
+  },
+  "1424165118": {
+    "docPath": "/docs/technical-support/hardware-and-device-support/vr-headset-troubleshooting",
+    "path": "/articles/1424165118-vr-headset-troubleshooting"
+  },
+  "1457048354": {
+    "docPath": "/docs/technical-support/audio-problems/audio-cutting-out-or-distorted",
+    "path": "/articles/1457048354-audio-cutting-out-or-distorted"
+  },
+  "1614592554": {
+    "docPath": "/docs/account-and-login-issues/login-and-password-troubleshooting/i-forgot-my-password",
+    "path": "/articles/1614592554-i-forgot-my-password"
+  },
+  "1669142813": {
+    "docPath": "/docs/technical-support/performance-issues/overheating-or-battery-drain",
+    "path": "/articles/1669142813-overheating-or-battery-drain"
+  },
+  "1670989183": {
+    "docPath": "/docs/community-and-safety/community-guidelines/savrse-community-standards",
+    "path": "/articles/1670989183-savrse-community-standards"
+  },
+  "1732710459": {
+    "docPath": "/docs/exploring-and-socializing/social-features/using-voice-chat-and-communication",
+    "path": "/articles/1732710459-using-voice-chat-and-communication"
+  },
+  "1844956562": {
+    "docPath": "/docs/exploring-and-socializing/finding-and-joining-worlds/browsing-and-joining-worlds",
+    "path": "/articles/1844956562-browsing-and-joining-worlds"
+  },
+  "1858675717": {
+    "docPath": "/docs/exploring-and-socializing/finding-and-joining-worlds/switching-between-worlds",
+    "path": "/articles/1858675717-switching-between-worlds"
+  },
+  "1998028660": {
+    "docPath": "/docs/getting-started/introduction-to-savrse/how-the-community-and-vr-app-work-together",
+    "path": "/articles/1998028660-how-the-community-and-vr-app-work-together"
+  },
+  "2033881596": {
+    "docPath": "/docs/technical-support/performance-issues/world-takes-too-long-to-load",
+    "path": "/articles/2033881596-world-takes-too-long-to-load"
+  },
+  "2050196969": {
+    "docPath": "/docs/technical-support/hardware-and-device-support/device-compatibility-and-setup",
+    "path": "/articles/2050196969-device-compatibility-and-setup"
+  },
+  "2067210013": {
+    "docPath": "/docs/exploring-and-socializing/social-features/emotes-and-self-gestures",
+    "path": "/articles/2067210013-emotes-and-self-gestures"
+  },
+  "2071120277": {
+    "docPath": "/docs/account-and-login-issues/account-creation-and-management/changing-your-password",
+    "path": "/articles/2071120277-changing-your-password"
+  },
+  "2076871477": {
+    "docPath": "/docs/getting-started/onboarding-and-vr-basic/basic-controls-and-navigation-in-world",
+    "path": "/articles/2076871477-basic-controls-and-navigation-in-world"
+  },
+  "2097831810": {
+    "docPath": "/docs/technical-support/connection-issues/voice-chat-not-working-due-to-network-restrictions",
+    "path": "/articles/2097831810-voice-chat-not-working-due-to-network-restrictions"
+  }
+}

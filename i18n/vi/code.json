@@ -1,0 +1,6 @@
+{
+  "theme.docs.sidebar.articlesInSection": {
+    "message": "Các bài trong mục này",
+    "description": "Heading for the list of articles in the doc sidebar"
+  }
+}
