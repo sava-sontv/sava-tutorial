@@ -1,0 +1,37 @@
+backend:
+  name: github
+  repo: sava-sontv/savrse-help         # vd: sontran/my-website
+  branch: main              # nếu bạn dùng main
+
+media_folder: "static/img/uploads"
+public_folder: "/img/uploads"
+
+collections:
+  - name: "blog"
+    label: "Blog"
+    folder: "blog"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    extension: "md"
+    format: "frontmatter"
+    sortable_fields:
+      fields: ["title", "date"]
+      default:
+        field: "date"
+        direction: "Descending"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Date", name: "date", widget: "datetime" }
+      - { label: "Sidebar Position", name: "sidebar_position", widget: "number", required: false, value_type: "int", default: 1 }
+      - { label: "Slug", name: "slug", widget: "string", required: false }
+      - { label: "Tags", name: "tags", widget: "list", required: false }
+      - label: "Authors"
+        name: "authors"
+        widget: "list"
+        required: false
+        fields:
+          - { label: "Name", name: "name", widget: "string" }
+          - { label: "Title", name: "title", widget: "string", required: false }
+          - { label: "URL", name: "url", widget: "string", required: false }
+          - { label: "Avatar", name: "image_url", widget: "string", required: false }
+      - { label: "Body", name: "body", widget: "markdown" }

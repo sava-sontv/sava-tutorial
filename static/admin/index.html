@@ -21,13 +21,14 @@
         },
         media_folder: 'static/img/uploads',
         public_folder: '/img/uploads',
+        // folder: 'docs',
       };
 
 
-      const avatarCollection = {
-        name: 'avatar',
-        label: 'Avatar',
-        folder: 'avatar',
+      const accountAndLoginIssuesCollection = {
+        name: 'account-and-login-issues',
+        label: 'Account & Login Issues',
+        folder: 'docs/account-and-login-issues',
         create: true,
         slug: '{{slug}}',
         extension: 'md',
@@ -35,7 +36,6 @@
         fields: [
           { label: 'Title', name: 'title', widget: 'string' },
           { label: 'Slug', name: 'slug', widget: 'string', required: false },
-          // { label: 'Tags', name: 'tags', widget: 'list', required: false },
           { label: 'Body', name: 'body', widget: 'markdown' },
           {
             label: 'Sort Index',
@@ -47,31 +47,7 @@
           },
         ],
       };
-
-      const creatorCollection = {
-        name: 'creator',
-        label: 'Creator',
-        folder: 'creator',
-        create: true,
-        slug: '{{slug}}',
-        extension: 'md',
-        format: 'frontmatter',
-        fields: [
-          { label: 'Title', name: 'title', widget: 'string' },
-          { label: 'Slug', name: 'slug', widget: 'string', required: false },
-          // { label: 'Tags', name: 'tags', widget: 'list', required: false },
-          { label: 'Body', name: 'body', widget: 'markdown' },
-          {
-            label: 'Sort Index',
-            name: 'sidebar_position',
-            widget: 'number',
-            required: false,
-            value_type: 'int',
-            default: 1,
-          },
-        ],
-      };
-
+      
       const config = {
         create: true,
         slug: '{{slug}}',
@@ -201,8 +177,7 @@
         config: {
           ...settingsConfig,
           collections: [
-            avatarCollection,
-            creatorCollection,
+            accountAndLoginIssuesCollection,
             topic11,
             topic12,
             topic21,
