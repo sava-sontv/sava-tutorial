@@ -33,6 +33,18 @@
         slug: '{{slug}}',
         extension: 'md',
         format: 'frontmatter',
+        nested: {
+          depth: 2,
+          summary: '{{title}}',
+          subfolders: false,
+        },
+        meta: {
+          path: {
+            widget: 'string',
+            label: 'Path',
+            index_file: '_index',
+          },
+        },
         fields: [
           { label: 'Title', name: 'title', widget: 'string' },
           { label: 'Slug', name: 'slug', widget: 'string', required: false },
@@ -80,20 +92,6 @@
         name: 'onboarding-and-vr-basic',
         label: 'Onboarding & VR Basics',
         folder: 'onboarding-and-vr-basic',
-        ...config,
-      };
-
-      const topic21 = {
-        name: 'account-creation-and-management',
-        label: 'Account Creation & Management',
-        folder: 'account-creation-and-management',
-        ...config,
-      };
-
-      const topic22 = {
-        name: 'login-and-password-troubleshooting',
-        label: 'Login & Password Troubleshooting',
-        folder: 'clogin-and-password-troubleshooting',
         ...config,
       };
 
@@ -180,8 +178,6 @@
             accountAndLoginIssuesCollection,
             topic11,
             topic12,
-            topic21,
-            topic22,
             topic31,
             topic32,
             topic33,
