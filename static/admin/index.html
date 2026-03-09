@@ -35,9 +35,10 @@
         format: 'frontmatter',
         nested: {
           depth: 2,
-          summary: '{{title}}',
+          summary: '{{name}}',
           subfolders: false,
         },
+        sortable_fields: ['sidebar_position', 'title'],
         meta: {
           path: {
             widget: 'string',
@@ -65,6 +66,7 @@
         slug: '{{slug}}',
         extension: 'md',
         format: 'frontmatter',
+        sortable_fields: ['sidebar_position', 'title'],
         fields: [
           { label: 'Title', name: 'title', widget: 'string' },
           { label: 'Slug', name: 'slug', widget: 'string', required: false },
