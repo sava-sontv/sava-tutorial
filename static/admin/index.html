@@ -13,6 +13,73 @@
 
   <body>
     <script>
+      function getSubfolderFromFilterUrl() {
+        var pathParam = '';
+        var search = window.location.search || '';
+        var hash = window.location.hash || '';
+        var hashQuery = hash.indexOf('?') !== -1 ? hash.slice(hash.indexOf('?')) : '';
+        var queryString = hashQuery || search;
+        if (queryString) {
+          var params = new URLSearchParams(queryString);
+          pathParam = params.get('path') || '';
+        }
+        if (pathParam) {
+          return pathParam;
+        }
+        var match = hash.match(/\/filter\/([^/]+)/);
+        return match ? match[1] : '';
+      }
+
+      var SelectWithFilterDefaultControl = createClass({
+        getInitialState: function () {
+          return { options: [] };
+        },
+        componentDidMount: function () {
+          var opts = this.props.field && this.props.field.get('options');
+          if (opts && opts.toJS) {
+            this.setState({ options: opts.toJS() });
+          } else if (Array.isArray(opts)) {
+            this.setState({ options: opts });
+          }
+          var filterSubfolder = getSubfolderFromFilterUrl();
+          if (filterSubfolder) {
+            var options = opts ? (opts.toJS ? opts.toJS() : opts) : [];
+            var valid = options.some(function (o) {
+              return (o.value || o) === filterSubfolder;
+            });
+            if (valid) {
+              this.props.onChange(filterSubfolder);
+            }
+          }
+        },
+        handleChange: function (e) {
+          this.props.onChange(e.target.value);
+        },
+        render: function () {
+          var value = this.props.value;
+          var forID = this.props.forID;
+          var className = this.props.classNameWrapper || this.props.className || '';
+          var opts = this.state.options;
+          if (!opts.length && this.props.field) {
+            var fopts = this.props.field.get('options');
+            opts = fopts && fopts.toJS ? fopts.toJS() : (Array.isArray(fopts) ? fopts : []);
+          }
+          var selectValue = value || (opts[0] && (opts[0].value || opts[0])) || '';
+          return h('select', {
+            id: forID,
+            value: selectValue,
+            onChange: this.handleChange,
+            className: className,
+          }, opts.map(function (opt) {
+            var v = opt.value !== undefined ? opt.value : opt;
+            var l = opt.label !== undefined ? opt.label : v;
+            return h('option', { key: v, value: v }, l);
+          }));
+        },
+      });
+
+      CMS.registerWidget('selectWithFilterDefault', SelectWithFilterDefaultControl, null);
+
       const settingsConfig = {
         backend: {
           name: 'github',
@@ -64,10 +131,16 @@
       const folderOption = {
         label: 'Folder (cấp 2)',
         name: 'subfolder',
-        widget: 'select',
+        widget: 'selectWithFilterDefault',
       };
 
+      var accountLoginSubfolderOptions = [
+        { label: 'Account creation & management', value: 'account-creation-and-management' },
+        { label: 'Login & password troubleshooting', value: 'login-and-password-troubleshooting' },
+      ];
+
       // Nhiều folder, mỗi folder nhiều .md: docs/account-and-login-issues/<subfolder>/<slug>.md
+      // Dùng selectWithFilterDefault: khi tạo mới từ .../filter/<subfolder> thì chọn sẵn subfolder đó
       const accountAndLoginIssuesCollection = {
         name: 'account-and-login-issues',
         label: 'Account & Login Issues',
@@ -75,16 +148,7 @@
         fields: [
           {
             ...folderOption,
-            options: [
-              {
-                label: 'Account creation & management',
-                value: 'account-creation-and-management',
-              },
-              {
-                label: 'Login & password troubleshooting',
-                value: 'login-and-password-troubleshooting',
-              },
-            ],
+            options: accountLoginSubfolderOptions,
             default: 'account-creation-and-management',
           },
         ].concat(defaultFields),
