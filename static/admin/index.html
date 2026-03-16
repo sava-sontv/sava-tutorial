@@ -24,9 +24,33 @@
       };
 
       // Config: file in 2-level folder, slug = filename (e.g. testing-123 → testing-123.md)
+
+      const defaultFields = [
+        { label: 'Title', name: 'title', widget: 'string' },
+        {
+          label: 'Slug (tên file)',
+          name: 'slug',
+          widget: 'string',
+          hint: 'Tên file .md (vd: testing-123 → testing-123.md)',
+          pattern: [
+            '^[a-z0-9]+(?:-[a-z0-9]+)*$',
+            'Chỉ chữ thường, số và dấu gạch ngang',
+          ],
+        },
+        { label: 'Body', name: 'body', widget: 'markdown' },
+        {
+          label: 'Sort Index',
+          name: 'sidebar_position',
+          widget: 'number',
+          required: false,
+          value_type: 'int',
+          default: 1,
+        },
+      ];
+
       const config = {
         create: true,
-        slug: '{{slug}}',
+        slug: '{{subfolder}}/{{slug}}',
         extension: 'md',
         format: 'frontmatter',
         nested: {
@@ -37,17 +61,20 @@
         sortable_fields: ['sidebar_position', 'title'],
       };
 
+      const folderOption = {
+        label: 'Folder (cấp 2)',
+        name: 'subfolder',
+        widget: 'select',
+      };
+
       // Nhiều folder, mỗi folder nhiều .md: docs/account-and-login-issues/<subfolder>/<slug>.md
       const accountAndLoginIssuesCollection = {
         name: 'account-and-login-issues',
         label: 'Account & Login Issues',
         folder: 'docs/account-and-login-issues',
-        slug: '{{subfolder}}/{{slug}}',
         fields: [
           {
-            label: 'Folder (cấp 2)',
-            name: 'subfolder',
-            widget: 'select',
+            ...folderOption,
             options: [
               {
                 label: 'Account creation & management',
@@ -60,34 +87,144 @@
             ],
             default: 'account-creation-and-management',
           },
-          { label: 'Title', name: 'title', widget: 'string' },
+        ].concat(defaultFields),
+        ...config,
+      };
+
+      const communityAndSafetyCollection = {
+        name: 'community-and-safety',
+        label: 'Community & Safety',
+        folder: 'docs/community-and-safety',
+        fields: [
           {
-            label: 'Slug (tên file)',
-            name: 'slug',
-            widget: 'string',
-            hint: 'Tên file .md (vd: testing-123 → testing-123.md)',
-            pattern: [
-              '^[a-z0-9]+(?:-[a-z0-9]+)*$',
-              'Chỉ chữ thường, số và dấu gạch ngang',
+            ...folderOption,
+            options: [
+              {
+                label: 'Community Guidelines',
+                value: 'community-guidelines',
+              },
+              {
+                label: 'Reporting & moderation',
+                value: 'reporting-and-moderation',
+              },
             ],
+            default: 'community-guidelines',
           },
-          { label: 'Body', name: 'body', widget: 'markdown' },
+        ].concat(defaultFields),
+        ...config,
+      };
+
+      const creatingInSavrseCollection = {
+        name: 'creating-in-savrse',
+        label: 'Creating in Savrse',
+        folder: 'docs/creating-in-savrse',
+        fields: [
           {
-            label: 'Sort Index',
-            name: 'sidebar_position',
-            widget: 'number',
-            required: false,
-            value_type: 'int',
-            default: 1,
+            ...folderOption,
+            options: [
+              {
+                label: 'World Creation Basics',
+                value: 'world-creation-basics',
+              },
+              {
+                label: 'Creation Policies & Guidelines',
+                value: 'creation-policies-and-guidelines',
+              },
+            ],
+            default: 'world-creation-basics',
           },
-        ],
+        ].concat(defaultFields),
+        ...config,
+      };
+
+      const exploringAndSocializingCollection = {
+        name: 'exploring-and-socializing',
+        label: 'Exploring & Socializing',
+        folder: 'docs/exploring-and-socializing',
+        fields: [
+          {
+            ...folderOption,
+            options: [
+              {
+                label: 'Finding And Joining Worlds',
+                value: 'finding-and-joining-worlds',
+              },
+              {
+                label: 'Social Features',
+                value: 'social-features',
+              },
+            ],
+            default: 'finding-and-joining-worlds',
+          },
+        ].concat(defaultFields),
+        ...config,
+      };
+
+      const gettingStartedCollection = {
+        name: 'getting-started',
+        label: 'Getting Started',
+        folder: 'docs/getting-started',
+        fields: [
+          {
+            ...folderOption,
+            options: [
+              {
+                label: 'Introduction To Savrse',
+                value: 'introduction-to-savrse',
+              },
+              {
+                label: 'Onboarding and VR Basic',
+                value: 'onboarding-and-vr-basic',
+              },
+            ],
+            default: 'introduction-to-savrse',
+          },
+        ].concat(defaultFields),
+        ...config,
+      };
+
+      const technicalSupportCollection = {
+        name: 'technical-support',
+        label: 'Technical Support',
+        folder: 'docs/technical-support',
+        fields: [
+          {
+            ...folderOption,
+            options: [
+              {
+                label: 'Connection Issues',
+                value: 'connection-issues',
+              },
+              {
+                label: 'Audio Problems',
+                value: 'audio-problems',
+              },
+              {
+                label: 'Performance Issues',
+                value: 'performance-issues',
+              },
+              {
+                label: 'Hardware And Device Support',
+                value: 'hardware-and-device-support',
+              },
+            ],
+            default: 'connection-issues',
+          },
+        ].concat(defaultFields),
         ...config,
       };
 
       CMS.init({
         config: {
           ...settingsConfig,
-          collections: [accountAndLoginIssuesCollection],
+          collections: [
+            gettingStartedCollection,
+            accountAndLoginIssuesCollection,
+            technicalSupportCollection,
+            exploringAndSocializingCollection,
+            communityAndSafetyCollection,
+            creatingInSavrseCollection,
+          ],
         },
       });
     </script>

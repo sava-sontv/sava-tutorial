@@ -1,7 +1,7 @@
 ---
 title: Changing Your Password
 slug: changing-your-password
-sidebar_position: 1
+sidebar_position: 10
 ---
 ### Need to update your login password? Here’s how.
 

@@ -286,7 +286,8 @@ const sidebars = {
         "label": "World Creation Basics",
         "items": [
           "creating-in-savrse/world-creation-basics/installing-savrse-studio",
-          "creating-in-savrse/world-creation-basics/creating-your-first-world"
+          "creating-in-savrse/world-creation-basics/creating-your-first-world",
+          "creating-in-savrse/world-creation-basics/understanding-triangles-and-project-limits-in-savrse-studio"
         ],
         "collapsed": false,
         "key": "creating-in-savrse-world-creation-basics",
@@ -327,4 +328,4 @@ const sidebars = {
 ],
 };
 module.exports = sidebars;
-// touched 1773655672373
+// touched 1773657219651
