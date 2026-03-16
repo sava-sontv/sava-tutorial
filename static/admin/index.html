@@ -21,7 +21,6 @@
         },
         media_folder: 'static/img/uploads',
         public_folder: '/img/uploads',
-        // folder: 'docs',
       };
 
       // Config: file in 2-level folder, slug = filename (e.g. testing-123 → testing-123.md)
@@ -36,25 +35,6 @@
           subfolders: false,
         },
         sortable_fields: ['sidebar_position', 'title'],
-        fields: [
-          { label: 'Title', name: 'title', widget: 'string' },
-          {
-            label: 'Slug (tên file)',
-            name: 'slug',
-            widget: 'string',
-            hint: 'Tên file .md (vd: testing-123 → testing-123.md)',
-            pattern: ['^[a-z0-9]+(?:-[a-z0-9]+)*$', 'Chỉ chữ thường, số và dấu gạch ngang'],
-          },
-          { label: 'Body', name: 'body', widget: 'markdown' },
-          {
-            label: 'Sort Index',
-            name: 'sidebar_position',
-            widget: 'number',
-            required: false,
-            value_type: 'int',
-            default: 1,
-          },
-        ],
       };
 
       // Nhiều folder, mỗi folder nhiều .md: docs/account-and-login-issues/<subfolder>/<slug>.md
@@ -63,23 +43,20 @@
         label: 'Account & Login Issues',
         folder: 'docs/account-and-login-issues',
         slug: '{{subfolder}}/{{slug}}',
-        create: true,
-        extension: 'md',
-        format: 'frontmatter',
-        nested: {
-          depth: 2,
-          summary: '{{title}}',
-          subfolders: true,
-        },
-        sortable_fields: ['sidebar_position', 'title'],
         fields: [
           {
             label: 'Folder (cấp 2)',
             name: 'subfolder',
             widget: 'select',
             options: [
-              { label: 'Account creation & management', value: 'account-creation-and-management' },
-              { label: 'Login & password troubleshooting', value: 'login-and-password-troubleshooting' },
+              {
+                label: 'Account creation & management',
+                value: 'account-creation-and-management',
+              },
+              {
+                label: 'Login & password troubleshooting',
+                value: 'login-and-password-troubleshooting',
+              },
             ],
             default: 'account-creation-and-management',
           },
@@ -89,7 +66,10 @@
             name: 'slug',
             widget: 'string',
             hint: 'Tên file .md (vd: testing-123 → testing-123.md)',
-            pattern: ['^[a-z0-9]+(?:-[a-z0-9]+)*$', 'Chỉ chữ thường, số và dấu gạch ngang'],
+            pattern: [
+              '^[a-z0-9]+(?:-[a-z0-9]+)*$',
+              'Chỉ chữ thường, số và dấu gạch ngang',
+            ],
           },
           { label: 'Body', name: 'body', widget: 'markdown' },
           {
@@ -101,116 +81,13 @@
             default: 1,
           },
         ],
-      };
-
-      const topic11 = {
-        name: 'introduction-to-savrse',
-        label: 'Introduction to Savrse',
-        folder: 'introduction-to-savrse',
-        ...config,
-      };
-
-      const topic12 = {
-        name: 'onboarding-and-vr-basic',
-        label: 'Onboarding & VR Basics',
-        folder: 'onboarding-and-vr-basic',
-        ...config,
-      };
-
-      const topic31 = {
-        name: 'connection-issues',
-        label: 'Connection Issues',
-        folder: 'connection-issues',
-        ...config,
-      };
-
-      const topic32 = {
-        name: 'audio-problems',
-        label: 'Audio Problems',
-        folder: 'audio-problems',
-        ...config,
-      };
-
-      const topic33 = {
-        name: 'performance-issues',
-        label: 'Performance Issues',
-        folder: 'performance-issues',
-        ...config,
-      };
-
-      const topic34 = {
-        name: 'hardware-and-device-support',
-        label: 'Hardware & Device Support',
-        folder: 'hardware-and-device-support',
-        ...config,
-      };
-
-      let name = 'finding-and-joining-worlds';
-      const topic41 = {
-        name,
-        label: 'Finding & Joining Worlds',
-        folder: name,
-        ...config,
-      };
-
-      name = 'social-features';
-      const topic42 = {
-        name,
-        label: 'Social Features',
-        folder: name,
-        ...config,
-      };
-
-      name = 'community-guidelines';
-      const topic51 = {
-        name,
-        label: 'Community Guidelines',
-        folder: name,
-        ...config,
-      };
-
-      name = 'reporting-and-moderation';
-      const topic52 = {
-        name,
-        label: 'Reporting & Moderation',
-        folder: name,
-        ...config,
-      };
-
-      name = 'world-creation-basics';
-      const topic61 = {
-        name,
-        label: 'World Creation Basics',
-        folder: name,
-        ...config,
-      };
-
-      name = 'creation-policies-and-guidelines';
-      const topic62 = {
-        name,
-        label: 'Creation Policies & Guidelines',
-        folder: name,
         ...config,
       };
 
       CMS.init({
         config: {
           ...settingsConfig,
-          collections: [
-            accountAndLoginIssuesCollection,
-            topic11,
-            topic12,
-            topic31,
-            topic32,
-            topic33,
-            topic34,
-            topic41,
-            topic42,
-            topic51,
-            topic52,
-            topic61,
-            topic62,
-          ],
+          collections: [accountAndLoginIssuesCollection],
         },
       });
     </script>
