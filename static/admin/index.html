@@ -24,11 +24,8 @@
         // folder: 'docs',
       };
 
-
-      const accountAndLoginIssuesCollection = {
-        name: 'account-and-login-issues',
-        label: 'Account & Login Issues',
-        folder: 'docs/account-and-login-issues',
+      // Config: file in 2-level folder, slug = filename (e.g. testing-123 → testing-123.md)
+      const config = {
         create: true,
         slug: '{{slug}}',
         extension: 'md',
@@ -39,16 +36,15 @@
           subfolders: false,
         },
         sortable_fields: ['sidebar_position', 'title'],
-        meta: {
-          path: {
-            widget: 'string',
-            label: 'Path',
-            index_file: '_index',
-          },
-        },
         fields: [
           { label: 'Title', name: 'title', widget: 'string' },
-          { label: 'Slug', name: 'slug', widget: 'string', required: false },
+          {
+            label: 'Slug (tên file)',
+            name: 'slug',
+            widget: 'string',
+            hint: 'Tên file .md (vd: testing-123 → testing-123.md)',
+            pattern: ['^[a-z0-9]+(?:-[a-z0-9]+)*$', 'Chỉ chữ thường, số và dấu gạch ngang'],
+          },
           { label: 'Body', name: 'body', widget: 'markdown' },
           {
             label: 'Sort Index',
@@ -60,17 +56,41 @@
           },
         ],
       };
-      
-      const config = {
+
+      // Nhiều folder, mỗi folder nhiều .md: docs/account-and-login-issues/<subfolder>/<slug>.md
+      const accountAndLoginIssuesCollection = {
+        name: 'account-and-login-issues',
+        label: 'Account & Login Issues',
+        folder: 'docs/account-and-login-issues',
+        slug: '{{subfolder}}/{{slug}}',
         create: true,
-        slug: '{{slug}}',
         extension: 'md',
         format: 'frontmatter',
+        nested: {
+          depth: 2,
+          summary: '{{title}}',
+          subfolders: true,
+        },
         sortable_fields: ['sidebar_position', 'title'],
         fields: [
+          {
+            label: 'Folder (cấp 2)',
+            name: 'subfolder',
+            widget: 'select',
+            options: [
+              { label: 'Account creation & management', value: 'account-creation-and-management' },
+              { label: 'Login & password troubleshooting', value: 'login-and-password-troubleshooting' },
+            ],
+            default: 'account-creation-and-management',
+          },
           { label: 'Title', name: 'title', widget: 'string' },
-          { label: 'Slug', name: 'slug', widget: 'string', required: false },
-          // { label: 'Tags', name: 'tags', widget: 'list', required: false },
+          {
+            label: 'Slug (tên file)',
+            name: 'slug',
+            widget: 'string',
+            hint: 'Tên file .md (vd: testing-123 → testing-123.md)',
+            pattern: ['^[a-z0-9]+(?:-[a-z0-9]+)*$', 'Chỉ chữ thường, số và dấu gạch ngang'],
+          },
           { label: 'Body', name: 'body', widget: 'markdown' },
           {
             label: 'Sort Index',
