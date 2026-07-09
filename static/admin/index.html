@@ -278,6 +278,25 @@
         ...config,
       };
 
+      const marketplaceAndSavaXCollection = {
+        name: 'marketplace-and-savax',
+        label: 'Marketplace And SavaX',
+        folder: 'docs/marketplace-and-savax',
+        fields: [
+          {
+            ...folderOption,
+            options: [
+              {
+                label: 'Marketplace Basics',
+                value: 'marketplace-basics',
+              },
+            ],
+            default: 'marketplace-basics',
+          },
+        ].concat(defaultFields),
+        ...config,
+      };
+
       CMS.init({
         config: {
           ...settingsConfig,
@@ -288,6 +307,7 @@
             exploringAndSocializingCollection,
             communityAndSafetyCollection,
             creatingInSavrseCollection,
+            marketplaceAndSavaXCollection,
           ],
         },
       });
