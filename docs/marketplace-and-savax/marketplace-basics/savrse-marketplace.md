@@ -2,9 +2,9 @@
 subfolder: marketplace-basics
 title: Savrse Marketplace
 slug: savrse-marketplace
-sidebar_position: 1
+sidebar_position: 5
 ---
-(Learn how to discover, purchase, and manage digital assets on the Savrse Marketplace)
+### Learn how to discover, purchase, and manage digital assets on the Savrse Marketplace
 
 The Savrse Marketplace is where users can discover and purchase digital assets for use within the Savrse ecosystem. Assets purchased from Marketplace can be used to support world creation, creative projects, and other supported experiences in Savrse.
 
@@ -44,22 +44,16 @@ To purchase one asset directly:
 1. Open the Marketplace page.
 2. Select the asset you want to view.
 3. Review the asset information, including:
-4. * Asset name
-
+   * Asset name
    * Description
-
    * Preview
-
    * Category
-
    * Technical Detail
-
    * Price in SavaX
-
    * Seller information
-5. Click Buy Now.
-6. Confirm the payment using SavaX.
-7. After the purchase is completed, the asset will be added to your Inventory.
+4. Click Buy Now.
+5. Confirm the payment using SavaX.
+6. After the purchase is completed, the asset will be added to your Inventory.
 
 *Option 2: Add Assets to Cart*
 
