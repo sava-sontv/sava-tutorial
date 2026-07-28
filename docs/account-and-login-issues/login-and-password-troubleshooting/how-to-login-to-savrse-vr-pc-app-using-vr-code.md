@@ -28,7 +28,7 @@ This method allows you to sign in without entering your email address and passwo
 
 The countdown under the code shows how long the code remains valid.
 
-*Image 1 – Login code displayed in the Savrse App*
+!\[Image 1 – Login code displayed in the Savrse App](images/login-by-code.webp)
 
 **Note:** Each login code is temporary and can only be used one time.
 
@@ -49,9 +49,7 @@ Make sure you sign in with the Sava Account that you want to use in the Savrse V
 2. Check that all letters and numbers have been entered correctly.
 3. Select **Login**.
 
-*Image 2 – Entering the code on Savrse Community*
-
-!\[Ảnh minh họa](images/photo_2.png)
+!\[Image 2 – Entering the code on Savrse Community](images/input-code.webp)
 
 ***Step 4: Return to the Savrse App***
 
