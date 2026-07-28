@@ -112,4 +112,10 @@ export const categories: CategoryItem[] = [
       { title: 'publishing-standards-and-quality-requirements', description: 'Article: Publishing Standards And Quality Requirements', path: '/articles/567779505-publishing-standards-and-quality-requirements', docPath: '/docs/creating-in-savrse/creation-policies-and-guidelines/publishing-standards-and-quality-requirements', active: true, sort: 15 },
     ] },
   ] },
+  { title: 'marketplace-and-savax', description: 'Articles in Marketplace And Savax', path: '/categories/1499416999-marketplace-and-savax', docPath: '/docs/marketplace-and-savax', active: true, sort: 30, sections: [
+    { title: 'marketplace-basics', description: 'Articles in Marketplace Basics', path: '/sections/2107209671-marketplace-basics', docPath: '/docs/marketplace-and-savax/marketplace-basics', active: true, sort: 5, articles: [
+      { title: 'savrse-marketplace', description: 'Article: Savrse Marketplace', path: '/articles/682358950-savrse-marketplace', docPath: '/docs/marketplace-and-savax/marketplace-basics/savrse-marketplace', active: true, sort: 999 },
+      { title: 'what-is-savax', description: 'Article: What Is Savax', path: '/articles/585220955-what-is-savax', docPath: '/docs/marketplace-and-savax/marketplace-basics/what-is-savax', active: true, sort: 999 },
+    ] },
+  ] },
 ];

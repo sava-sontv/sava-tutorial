@@ -1,7 +1,8 @@
 ---
+subfolder: introduction-to-savrse
 title: How the Community and VR App Work Together?
 slug: how-the-community-and-vr-app-work-together
-sidebar_position: 15
+sidebar_position: 16
 ---
 Although the VR App is where you play the game, the Community provides management tools and a familiar panel UI that mirrors the interface inside VR.
 
@@ -19,6 +20,8 @@ Although the VR App is where you play the game, the Community provides managemen
 | Global Search                      | ✓         | ✓      |
 | VR Settings                        | ✗         | ✓      |
 | Account Setting (My Account)       | ✓         | ✗      |
+
+
 
 **How Data Syncs**
 

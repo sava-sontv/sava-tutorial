@@ -324,8 +324,38 @@ const sidebars = {
       "slug": "creating-in-savrse",
       "description": "Articles in Creating In Savrse"
     }
+  },
+  {
+    "type": "category",
+    "label": "Marketplace And Savax",
+    "items": [
+      {
+        "type": "category",
+        "label": "Marketplace Basics",
+        "items": [
+          "marketplace-and-savax/marketplace-basics/savrse-marketplace",
+          "marketplace-and-savax/marketplace-basics/what-is-savax"
+        ],
+        "collapsed": false,
+        "key": "marketplace-and-savax-marketplace-basics",
+        "link": {
+          "type": "generated-index",
+          "title": "Marketplace Basics",
+          "slug": "marketplace-and-savax/marketplace-basics",
+          "description": "Articles in Marketplace Basics"
+        }
+      }
+    ],
+    "collapsed": false,
+    "key": "marketplace-and-savax",
+    "link": {
+      "type": "generated-index",
+      "title": "Marketplace And Savax",
+      "slug": "marketplace-and-savax",
+      "description": "Articles in Marketplace And Savax"
+    }
   }
 ],
 };
 module.exports = sidebars;
-// touched 1773657219651
+// touched 1785222740096

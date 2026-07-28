@@ -1,4 +1,5 @@
 ---
+subfolder: introduction-to-savrse
 title: What Is Savrse?
 slug: what-is-savrse
 sidebar_position: 5
@@ -40,4 +41,4 @@ Savrse is a social VR platform where players can explore immersive 3D worlds, ch
 * Explore virtual worlds (VR only)
 * Meet and interact with other users
 * Manage your social profile & friends list
-* Create and manage your own worlds and projects
+* Create and manage your own worlds and projects.
