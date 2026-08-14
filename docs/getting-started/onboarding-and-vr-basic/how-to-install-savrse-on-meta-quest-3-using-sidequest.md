@@ -18,7 +18,7 @@ Make sure you have:
 * Developer Mode enabled on your Meta Quest 3
 * An internet connection
 
-> **Note:** The initial SideQuest setup may require a computer and USB connection.
+> **Note:** Before installing Savrse, we recommend following the official **[Get Start with SideQuest](https://sidequestvr.com/setup-howto)** guide to set up SideQuest and prepare your Meta Quest 3.
 
 ### Method 1: Install Savrse Directly from SideQuest on Your Headset
 
