@@ -1,5 +1,11 @@
 [
   {
+    "id": "how-to-login-to-savrse-vr-pc-app-using-vr-code",
+    "active": true,
+    "sort": 999,
+    "pathId": 1933586552
+  },
+  {
     "id": "i-didnt-receive-the-password-reset-email",
     "active": true,
     "sort": 10,

@@ -51,6 +51,7 @@ export const categories: CategoryItem[] = [
       { title: 'i-didnt-receive-the-password-reset-email', description: 'Article: I Didnt Receive The Password Reset Email', path: '/articles/348068126-i-didnt-receive-the-password-reset-email', docPath: '/docs/account-and-login-issues/login-and-password-troubleshooting/i-didnt-receive-the-password-reset-email', active: true, sort: 10 },
       { title: 'i-forgot-which-email-i-used', description: 'Article: I Forgot Which Email I Used', path: '/articles/1043441192-i-forgot-which-email-i-used', docPath: '/docs/account-and-login-issues/login-and-password-troubleshooting/i-forgot-which-email-i-used', active: true, sort: 15 },
       { title: 'logging-in-by-code-failed', description: 'Article: Logging In By Code Failed', path: '/articles/1003638175-logging-in-by-code-failed', docPath: '/docs/account-and-login-issues/login-and-password-troubleshooting/logging-in-by-code-failed', active: true, sort: 20 },
+      { title: 'how-to-login-to-savrse-vr-pc-app-using-vr-code', description: 'Article: How To Login To Savrse Vr Pc App Using Vr Code', path: '/articles/1933586552-how-to-login-to-savrse-vr-pc-app-using-vr-code', docPath: '/docs/account-and-login-issues/login-and-password-troubleshooting/how-to-login-to-savrse-vr-pc-app-using-vr-code', active: true, sort: 999 },
     ] },
   ] },
   { title: 'technical-support', description: 'Articles in Technical Support', path: '/categories/919467359-technical-support', docPath: '/docs/technical-support', active: true, sort: 15, sections: [

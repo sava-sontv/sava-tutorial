@@ -77,7 +77,8 @@ const sidebars = {
           "account-and-login-issues/login-and-password-troubleshooting/i-forgot-my-password",
           "account-and-login-issues/login-and-password-troubleshooting/i-did-not-receive-the-password-reset-email",
           "account-and-login-issues/login-and-password-troubleshooting/i-forgot-which-email-i-used",
-          "account-and-login-issues/login-and-password-troubleshooting/logging-in-by-code-failed"
+          "account-and-login-issues/login-and-password-troubleshooting/logging-in-by-code-failed",
+          "account-and-login-issues/login-and-password-troubleshooting/how-to-login-to-savrse-vr-pc-app-using-vr-code"
         ],
         "collapsed": false,
         "key": "account-and-login-issues-login-and-password-troubleshooting",
@@ -358,4 +359,4 @@ const sidebars = {
 ],
 };
 module.exports = sidebars;
-// touched 1785222740096
+// touched 1786699432616
